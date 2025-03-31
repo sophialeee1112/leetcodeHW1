@@ -1,5 +1,6 @@
 # leetcodeHW1
 #題目一:Climbing Stairs https://leetcode.com/problems/climbing-stairs/description/
+
 class Solution:
     def climbStairs(self, n: int) -> int:
         if n <= 2:
@@ -14,7 +15,8 @@ class Solution:
             b = total      # 更新：b變成現在階
         return b 
 #題目二:Maximum Depth of Binary Tree https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
-  class Solution:
+
+class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
@@ -23,6 +25,7 @@ class Solution:
         return max(left_depth, right_depth) + 1
 
  #題目三:Merge Two Sorted Lists https://leetcode.com/problems/merge-two-sorted-lists/description/
+ 
  class Solution():
     def mergeTwoLists(self, list1, list2):
         listNode = ListNode()
@@ -41,10 +44,12 @@ class Solution:
         return listNode.next
 
 #題目四:Length of Last Word https://leetcode.com/problems/length-of-last-word/
-   class Solution():
+
+class Solution():
     def lengthOfLastWord(self, s):
         return len(s.strip().split(‘ ’)[-1])
 #題目五:plus on  https://leetcode.com/problems/plus-one/description/
+
 def plus_one(digits):
    
     n = len(digits)
@@ -57,6 +62,7 @@ def plus_one(digits):
     
     return [1] + digits
 #題目六:Roman to Integer  https://leetcode.com/problems/roman-to-integer/description/
+
 class Solution:
     def romanToInt(self, s:str)->int:
         roman_to_int={
